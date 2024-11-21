@@ -9,12 +9,12 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <main className="main-content">
+      <div className="body">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/news" element={<News />} />
         </Routes>
-      </main>
+      </div>
     </Router>
   );
 }

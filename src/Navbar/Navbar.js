@@ -15,11 +15,12 @@ const Navbar = () => {
       setShowMenu(false);
     }
   };
+
   return (
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Navigation Bar
+        <h1>Austin Han</h1>
         </NavLink>
 
         <div
@@ -29,7 +30,7 @@ const Navbar = () => {
           <ul className="nav__list">
             <li className="nav__item">
               <NavLink to="/" className="nav__link" onClick={closeMenuOnMobile}>
-                Home
+                About Me
               </NavLink>
             </li>
             <li className="nav__item">
@@ -38,7 +39,7 @@ const Navbar = () => {
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                News
+                Events
               </NavLink>
             </li>
             <li className="nav__item">
@@ -47,7 +48,7 @@ const Navbar = () => {
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                About Us
+                Lessons
               </NavLink>
             </li>
             <li className="nav__item">
@@ -56,7 +57,7 @@ const Navbar = () => {
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                Favorite
+                Performances
               </NavLink>
             </li>
             <li className="nav__item">
@@ -65,12 +66,16 @@ const Navbar = () => {
                 className="nav__link"
                 onClick={closeMenuOnMobile}
               >
-                Location
+                Portfolio
               </NavLink>
             </li>
             <li className="nav__item">
-              <NavLink to="/get-started" className="nav__link nav__cta">
-                Get Started
+              <NavLink
+                to="/location"
+                className="nav__link"
+                onClick={closeMenuOnMobile}
+              >
+                Contact
               </NavLink>
             </li>
           </ul>
